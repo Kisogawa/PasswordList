@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--通常ボタン-->
+    <style name="ButtonRipplePrimary" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:background">@drawable/ripple_effect_primary</item>
+        <item name="android:textColor">@drawable/button_text</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:minWidth">0dip</item>
+    </style>
+    <!--通常ボタン2-->
+    <style name="ButtonRippleAccent" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:background">@drawable/ripple_effect_accent</item>
+        <item name="android:textColor">@drawable/button_text</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:minWidth">0dip</item>
+    </style>
+    <!--通常ボタン3-->
+    <style name="ButtonPrimary" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:background">@drawable/button_effect_primary</item>
+        <item name="android:textColor">@drawable/button_text</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:minWidth">0dip</item>
+    </style>
+    <!--通常ボタン4-->
+    <style name="ButtonAccent" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:background">@drawable/button_effect_accent</item>
+        <item name="android:textColor">@drawable/button_text</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:minWidth">0dip</item>
+    </style>
+    <!--通常ボタン5-->
+    <style name="ButtonRippleGray" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:background">@drawable/ripple_effect_grey</item>
+        <item name="android:textColor">@drawable/button_text</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:minWidth">0dip</item>
+    </style>
+</resources>

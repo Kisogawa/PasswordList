@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryBack">#e0a267</color>
+    <color name="colorPrimary">#474747</color>
+    <color name="colorPrimaryDark">#2e2e2e</color>
+    <color name="colorAccentBack">#86b6e8</color>
+    <color name="colorAccent">#226fbe</color>
+    <color name="colorDarkGray">#474747</color>
+    <color name="colorGrayWhite">#fafafa</color>
+    <color name="colorDarkWhite">#e5e5e5</color>
+    <color name="colorGray">#767676</color>
+    <color name="colorLightGray">#a6a6a6</color>
+    <color name="colorAlphaDark">#55000000</color>
+    <color name="colorDarkRed">#ffdd1700</color>
+    <color name="colorTitleViewBackGround">#474747</color>
+    <color name="colorTitleViewText">#fafafa</color>
+</resources>

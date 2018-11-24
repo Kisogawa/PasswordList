@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTitleViewBackGround"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="接続先無し"
+            android:textColor="@color/colorTitleViewText"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/Include_ProgressBar"
+            layout="@layout/include_progressbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="接続先:" />
+
+        <Spinner
+            android:id="@+id/Spinner_ConnectList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/Button_ReloadItem"
+            style="@style/ButtonRippleAccent"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="再取得" />
+    </LinearLayout>
+
+    <android.ochawanz.passwordlistandroid.layout.Separator
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:layout_height="1px" />
+
+    <ListView
+        android:id="@+id/ListView_PasswordItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <android.ochawanz.passwordlistandroid.layout.Separator
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:layout_height="1px" />
+
+    <Button
+        android:id="@+id/Button_NewItem"
+        style="@style/ButtonRippleAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="新規登録" />
+
+</LinearLayout>

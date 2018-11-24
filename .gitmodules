@@ -1,0 +1,3 @@
+[submodule "LoadingRing"]
+	path = LoadingRing
+	url = https://github.com/hirekoke/LoadingRing.git

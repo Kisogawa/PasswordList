@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接続先名称"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/EditText_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="(空欄可)"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorDarkGray" />
+
+    <android.ochawanz.passwordlistandroid.layout.Separator
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接続先"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/EditText_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="IPアドレスorドメイン名"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorDarkGray" />
+
+    <android.ochawanz.passwordlistandroid.layout.Separator
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ポート番号"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/EditText_PortNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="0～65535"
+        android:inputType="number"
+        android:textColor="@color/colorDarkGray" />
+
+    <android.ochawanz.passwordlistandroid.layout.Separator
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暗号キー"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/EditText_Key64"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/colorDarkGray" />
+
+</LinearLayout>

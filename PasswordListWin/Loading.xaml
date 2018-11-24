@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="PasswordListWin.Loading"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:local="clr-namespace:PasswordListWin"
+			 xmlns:ring="clr-namespace:LoadingRing;assembly=LoadingRing"
+			 mc:Ignorable="d" 
+			 d:DesignHeight="500" d:DesignWidth="500" Background="#7F000000">
+	<Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+		<ring:LoadingSolidRing AngleGap="0" Count="60" RingRatio="0.8" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" Text="処理中" FontSize="22" Foreground="{DynamicResource TextBox.Foreground}" FontFamily="Yu Gothic UI Semibold"/>
+	</Grid>
+
+</UserControl>

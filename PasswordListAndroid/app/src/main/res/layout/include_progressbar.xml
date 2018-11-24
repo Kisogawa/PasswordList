@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTitleViewBackGround">
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:progressDrawable="@drawable/progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未実行"
+        android:textColor="@color/colorTitleViewText"
+        android:textSize="4pt"
+        app:layout_constraintBottom_toTopOf="@+id/TextView_Progress"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView_Progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0[Byte]"
+        android:textColor="@color/colorTitleViewText"
+        android:textSize="4pt"
+        app:layout_constraintBottom_toTopOf="@+id/ProgressBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

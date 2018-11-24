@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTitleViewBackGround"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/PropertyDialog_Image"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/TextView_Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center|start"
+            android:padding="8dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="接続先編集"
+            android:textColor="@color/colorTitleViewText"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <!-- セパレータ -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_SelectItemTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="接続先(メイン)"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="18sp" />
+
+            <android.ochawanz.passwordlistandroid.layout.Separator
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray" />
+
+            <include
+                android:id="@+id/Include_ConnectionItemEdit"
+                layout="@layout/item_connectionitemedit" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.ochawanz.passwordlistandroid.layout.Separator
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Button_Cancel"
+            style="@style/ButtonAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="45dp"
+            android:text="キャンセル"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/Button_Register"
+            style="@style/ButtonAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="45dp"
+            android:text="登録"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
