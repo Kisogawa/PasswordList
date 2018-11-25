@@ -1,0 +1,5 @@
+DBPassword: パスワード
+DBUrl: jdbc:mysql://localhost:3306/<DB名>
+DBUser: DB接続ユーザー名
+password: DB接続パスワード
+versionNo: 1

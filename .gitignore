@@ -40,4 +40,4 @@ hs_err_pid*
 /PasswordListAndroid/build
 /PasswordListAndroid/captures
 .externalNativeBuild
-/PasswordList/WebContent/settings/Setting.yml
+#/PasswordList/WebContent/settings/Setting.yml
